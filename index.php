@@ -1,3 +1,5 @@
+<?php
+
 function getIP($ip = null, $deep_detect = TRUE){
     if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
         $ip = $_SERVER["REMOTE_ADDR"];
@@ -13,3 +15,8 @@ function getIP($ip = null, $deep_detect = TRUE){
     return $ip;
 }
 echo getIP();
+
+
+
+
+?>
